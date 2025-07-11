@@ -6,7 +6,7 @@ import plotly.express as px
 
 st.set_page_config(page_title="Promoter Recommender Tool", layout="wide")
 
-st.title("🧬 Promoter Recommender Tool")
+st.title("🧬 Promoter Recommender Tool For QS")
 
 # Load Excel data
 @st.cache_data
