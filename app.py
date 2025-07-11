@@ -14,11 +14,12 @@ This tool helps you choose the best promoter combinations for quorum sensing (QS
 - **Sender**: The cell expressing LuxI (and GFP) under a given promoter.
 - **Receiver**: The cell expressing LuxR (and mCherry) under another promoter.
 
-You provide your desired expression values:
+You provide your desired expression values (Input):
 - **GFP**: Expression level of the sender cell (Green Fluorescent Protein).
 - **mCherry**: Expression level of the receiver cell (Red Fluorescent Protein).
 - **Trigger Time**: Time (in minutes) after which the mCherry gene starts to express (triggered by AHL quorum sensing molecule).
-- **Output**
+
+ **Output**
 - **3D Scatter Plot**: Visualizes promoter combinations based on GFP, mCherry, and Trigger Time. You can explore how close each point is to your input.
 - **2D Plot**: Highlights the top few matching combinations — easy to compare expression levels and timing visually.
 - **Table of Top Matches**: Lists promoter combinations with expression values and a `diff_score`. Lower score = closer match to your desired input.
