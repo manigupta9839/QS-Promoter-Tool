@@ -5,6 +5,7 @@ import altair as alt
 import plotly.express as px
 
 st.set_page_config(page_title="Promoter Recommender Tool", layout="wide")
+st.title("🧬 Promoter Recommender Tool For QS")
 st.markdown("""
 ### ℹ️ How to Use This Tool
 
@@ -22,8 +23,6 @@ The app recommends combinations of promoters that best match your input, based o
 
 """)
 
-
-st.title("🧬 Promoter Recommender Tool For QS")
 
 # Load Excel data
 @st.cache_data
