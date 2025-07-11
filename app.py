@@ -5,6 +5,23 @@ import altair as alt
 import plotly.express as px
 
 st.set_page_config(page_title="Promoter Recommender Tool", layout="wide")
+st.markdown("""
+### ℹ️ How to Use This Tool
+
+This tool helps you choose the best promoter combinations for quorum sensing (QS) based gene expression using a synthetic co-culture of two engineered E. coli strains.
+
+- **Sender**: The cell expressing LuxI (and GFP) under a given promoter.
+- **Receiver**: The cell expressing LuxR (and mCherry) under another promoter.
+
+You provide your desired expression values:
+- **GFP**: Expression level of the sender cell (Green Fluorescent Protein).
+- **mCherry**: Expression level of the receiver cell (Red Fluorescent Protein).
+- **Trigger Time**: Time (in minutes) after which the mCherry gene starts to express (triggered by AHL quorum sensing molecule).
+
+The app recommends combinations of promoters that best match your input, based on experimental data from 81 combinations.
+
+""")
+
 
 st.title("🧬 Promoter Recommender Tool For QS")
 
