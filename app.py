@@ -18,6 +18,8 @@ You provide your desired expression values:
 - **GFP**: Expression level of the sender cell (Green Fluorescent Protein).
 - **mCherry**: Expression level of the receiver cell (Red Fluorescent Protein).
 - **Trigger Time**: Time (in minutes) after which the mCherry gene starts to express (triggered by AHL quorum sensing molecule).
+- **diff_score**: This score quantifies how close each promoter combination is to your desired GFP, mCherry, and trigger time values — lower scores indicate a better match.
+
 
 The app recommends combinations of promoters that best match your input, based on experimental data from 81 combinations.
 **This Tool has been developed by protein and organism engineering lab IISER Kolkata**
