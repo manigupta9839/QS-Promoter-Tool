@@ -18,14 +18,13 @@ You provide your desired expression values:
 - **GFP**: Expression level of the sender cell (Green Fluorescent Protein).
 - **mCherry**: Expression level of the receiver cell (Red Fluorescent Protein).
 - **Trigger Time**: Time (in minutes) after which the mCherry gene starts to express (triggered by AHL quorum sensing molecule).
-**Output**
-- **3D Scatter Plot**: Visualizes all 81 promoter combinations based on GFP, mCherry, and Trigger Time. You can explore how close each point is to your input.
+- **Output**
+- **3D Scatter Plot**: Visualizes promoter combinations based on GFP, mCherry, and Trigger Time. You can explore how close each point is to your input.
 - **2D Plot**: Highlights the top few matching combinations — easy to compare expression levels and timing visually.
 - **Table of Top Matches**: Lists promoter combinations with expression values and a `diff_score`. Lower score = closer match to your desired input.
-
+- **diff_score**: This score quantifies how close each promoter combination is to your desired GFP, mCherry, and trigger time values — lower scores indicate a better match.
 Use this to guide promoter design for synthetic co-cultures!
 
-- **diff_score**: This score quantifies how close each promoter combination is to your desired GFP, mCherry, and trigger time values — lower scores indicate a better match.
 
 
 The app recommends combinations of promoters that best match your input, based on experimental data from 81 combinations.
