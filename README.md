@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 Title
-st.title("🧬 Promoter Recommender Tool")
+st.title("🧬 Promoter Recommender Tool for QS")
 
 Load the Excel file
 @st.cache_data
