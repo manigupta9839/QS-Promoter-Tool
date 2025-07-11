@@ -20,7 +20,7 @@ You provide your desired expression values:
 - **Trigger Time**: Time (in minutes) after which the mCherry gene starts to express (triggered by AHL quorum sensing molecule).
 
 The app recommends combinations of promoters that best match your input, based on experimental data from 81 combinations.
-This Tool has been developed by protein and organism lab IISER Kolkata
+**This Tool has been developed by protein and organism engineering lab IISER Kolkata**
 
 """)
 
