@@ -5,7 +5,7 @@ import altair as alt
 import plotly.express as px
 
 st.set_page_config(page_title="Promoter Recommender Tool", layout="wide")
-st.title("🧬 Promoter Recommender Tool For QS")
+st.title("Promoter Recommender Tool For Lux QS-Co culture")
 st.markdown("""
 ### ℹ️ How to Use This Tool
 
@@ -56,7 +56,7 @@ def load_data():
 df = load_data()
 
 # Sidebar inputs
-st.sidebar.header("🎯 Desired Expression Inputs")
+st.sidebar.header("Desired Expression Inputs")
 desired_gfp = st.sidebar.number_input("Desired GFP", 0.0, 2.0, 0.4)
 desired_mcherry = st.sidebar.number_input("Desired mCherry", 0.0, 2.0, 0.4)
 desired_time = st.sidebar.number_input("Trigger Time (min)", 0.0, 400.0, 200.0)
