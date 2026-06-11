@@ -71,11 +71,18 @@ desired_mcherry = st.sidebar.number_input("Desired mCherry", 0.0, 2.0, 0.4)
 desired_time = st.sidebar.number_input("Trigger Time (min)", 0.0, 400.0, 200.0)
 
 # Compute difference score
-df["diff_score"] = (
-    abs(df["GFP"] - desired_gfp) +
-    abs(df["mCherry"] - desired_mcherry) +
-    abs(df["TriggerTime_min"] - desired_time) / 60  # normalized
-)
+# Standard deviation normalization
+gfp_std = df["GFP"].std()
+mcherry_std = df["mCherry"].std()
+time_std = df["TriggerTime_min"].std()
+
+# Euclidean distance score
+df["diff_score"] = np.sqrt(
+    ((df["GFP"] - desired_gfp) / gfp_std) ** 2 +
+    ((df["mCherry"] - desired_mcherry) / mcherry_std) ** 2 +
+    ((df["TriggerTime_min"] - desired_time) / time_std) ** 2
+)  # normalized
+
 
 top = df.sort_values("diff_score").head(10)
 
