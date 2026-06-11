@@ -49,7 +49,10 @@ def load_data():
         except:
             return np.nan
 
-    time_numeric_df = time_df.set_index("Unnamed: 0").applymap(time_to_minutes)
+    time_numeric_df = time_df.set_index("Unnamed: 0").apply(
+lambda col: col.map(time_to_minutes)
+)
+
     gfp_numeric_df = gfp_df.set_index("Unnamed: 0")
     mcherry_numeric_df = mcherry_df.set_index("Unnamed: 0")
 
